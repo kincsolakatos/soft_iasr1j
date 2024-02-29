@@ -16,6 +16,7 @@ namespace random
                 b.Height = r.Next(1, ClientRectangle.Height);
                 b.Width = r.Next(1, ClientRectangle.Width);
                 b.BackColor = Color.FromArgb(r.Next(0, 255), r.Next(0, 255), r.Next(0, 255));
+                Controls.Add(b);
             }
         }
     }
