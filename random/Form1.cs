@@ -13,8 +13,12 @@ namespace random
             {
                 Random r = new Random();
                 Button b = new Button();
-                b.Height = r.Next(1, ClientRectangle.Height);
-                b.Width = r.Next(1, ClientRectangle.Width);
+                int w = r.Next(1, ClientRectangle.Height);
+                int h = r.Next(1, ClientRectangle.Height);
+                b.Height = h;
+                b.Width = w;
+                b.Top = r.Next(1, ClientRectangle.Height - h);
+                b.Left = r.Next(1, ClientRectangle.Width - w);
                 b.BackColor = Color.FromArgb(r.Next(0, 255), r.Next(0, 255), r.Next(0, 255));
                 Controls.Add(b);
             }
