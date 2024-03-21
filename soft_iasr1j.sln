@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "villoogogomb", "villoogogom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "random", "random\random.csproj", "{A0C5DB6F-4084-4C98-8BC5-9D3C48112B08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hajoskviz", "hajoskviz\hajoskviz.csproj", "{781E4961-DA17-4DB8-A4A9-932E1952511C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hajoskviz", "hajoskviz\hajoskviz.csproj", "{781E4961-DA17-4DB8-A4A9-932E1952511C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kigyos", "kigyos\kigyos.csproj", "{6B480B5D-65AD-4187-8B53-20B6D6D894E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{781E4961-DA17-4DB8-A4A9-932E1952511C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{781E4961-DA17-4DB8-A4A9-932E1952511C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{781E4961-DA17-4DB8-A4A9-932E1952511C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B480B5D-65AD-4187-8B53-20B6D6D894E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B480B5D-65AD-4187-8B53-20B6D6D894E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B480B5D-65AD-4187-8B53-20B6D6D894E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B480B5D-65AD-4187-8B53-20B6D6D894E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
