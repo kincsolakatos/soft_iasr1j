@@ -8,28 +8,30 @@ namespace kigyos
         int iranyY;
         int lepesszam;
         List<KigyoElem> kigyo = new List<KigyoElem>();
+        Alma alma;
+        PictureBox mereg;
         public Form1()
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
+Random r = new Random();
+        public void Form1_Load(object sender, EventArgs e)
         {
 
             KeyDown += Form1_KeyDown;
-            Random r = new Random();
+            
             int almaX = r.Next(1, ClientRectangle.Width / KigyoElem.Meret) * KigyoElem.Meret;
             int almaY = r.Next(1, ClientRectangle.Height / KigyoElem.Meret) * KigyoElem.Meret;
             int meregX = r.Next(1, ClientRectangle.Width / KigyoElem.Meret) * KigyoElem.Meret;
             int meregY = r.Next(1, ClientRectangle.Height / KigyoElem.Meret) * KigyoElem.Meret;
-            PictureBox alma = new PictureBox();
+            alma = new ();
             alma.Width = KigyoElem.Meret;
             alma.Height = KigyoElem.Meret;
             alma.Top = almaY;
             alma.Left = almaX;
             alma.BackColor = Color.Red;
             Controls.Add(alma);
-            PictureBox mereg = new PictureBox();
+            mereg = new PictureBox();
             mereg.Width = KigyoElem.Meret;
             mereg.Height = KigyoElem.Meret;
             mereg.Top = meregY;
@@ -62,17 +64,31 @@ namespace kigyos
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        public void timer1_Tick(object sender, EventArgs e)
         {
             lepesszam++;
             fejX += iranyX * KigyoElem.Meret;
             fejY += iranyY * KigyoElem.Meret;
-            foreach (KigyoElem item in kigyo)
-                if (item.Top == fejY && item.Left == fejX)
+            foreach (object item in kigyo)
+            {
+
+                if (item is KigyoElem)
                 {
-                    timer1.Enabled = false;
-                    return;
+                    KigyoElem ke = (KigyoElem)item;
+                    if (ke.Top == fejY && ke.Left == fejX)
+                    {
+                        timer1.Enabled = false;
+                        return;
+                    }
                 }
+
+                
+
+
+            }
+
+            if(fejX==alma.Left)
+
             KigyoElem ke = new KigyoElem();
             ke.Top = fejY;
             ke.Left = fejX;
