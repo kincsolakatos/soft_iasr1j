@@ -1,4 +1,4 @@
-namespace CsillagterkepRajzolas
+namespace E
 {
     internal static class Program
     {

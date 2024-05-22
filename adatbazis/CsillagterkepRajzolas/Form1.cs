@@ -15,10 +15,9 @@ namespace CsillagterkepRajzolas
         private void button1_Click(object sender, EventArgs e)
         {
             Graphics g = this.CreateGraphics();
-            g.Clear(Color.White);
-            Color c = Color.White;
-            Pen toll = new Pen(c, 1);
-            Brush brush = new SolidBrush(c);
+            g.Clear(Color.Black);
+            Pen toll = new Pen(Color.Fuchsia, 1);
+            Brush brush = new SolidBrush(Color.White);
             HajosContext context = new HajosContext();
             var stars =
             (
@@ -32,13 +31,13 @@ namespace CsillagterkepRajzolas
                     s.Magnitude
                 }
             ).ToList();
-            double nagyitas = 300;
+            double nagyitas = 200;
             int cx = ClientRectangle.Width / 2;
             int cy = ClientRectangle.Height / 2;
             g.Clear(Color.Black);
             foreach (var star in stars)
             {
-                if (star.Magnitude > 10) continue;
+                if (star.Magnitude > 15) continue;
                 if (Math.Sqrt(Math.Pow(star.X, 2) + Math.Pow(star.Y, 2)) > 1) continue;
                 float x = (float)(star.X * nagyitas + cx);
                 float y = (float)(star.Y * nagyitas + cy);
