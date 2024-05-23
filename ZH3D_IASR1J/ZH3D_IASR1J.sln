@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZH3D_IASR1J", "ZH3\ZH3D_IASR1J.csproj", "{A7DEA7AD-4682-49B5-93FB-D40F0B9BB841}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7DEA7AD-4682-49B5-93FB-D40F0B9BB841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7DEA7AD-4682-49B5-93FB-D40F0B9BB841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7DEA7AD-4682-49B5-93FB-D40F0B9BB841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7DEA7AD-4682-49B5-93FB-D40F0B9BB841}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13A87E98-6207-4477-A853-E6F6A7851521}
+	EndGlobalSection
+EndGlobal
